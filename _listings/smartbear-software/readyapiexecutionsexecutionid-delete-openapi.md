@@ -204,6 +204,132 @@ paths:
           description: sf_external_accept_allow
       tags:
       - Executions
+  /readyapi/executions/{executionID}/status:
+    get:
+      summary: Returns the status of the specified recipe execution.
+      description: Use this operation to get information on the recipe execution specified
+        by <i>executionID</i>.  You can find in the response to your execution request
+        ([see how](http://readyapi.smartbear.com/testserver/tutorials/your_first_recipe/results)),
+        or you can send a GET <code>/readyapi/executions</code> request to the TestServer.
+      operationId: getExecutionStatus
+      x-api-path-slug: readyapiexecutionsexecutionidstatus-get
+      parameters:
+      - in: path
+        name: executionID
+        description: The id of the desired test run
+      responses:
+        apps:
+          description: app_allow
+        devices:
+          description: device_link
+        members:
+          description: member_invite
+        passwords:
+          description: tfa_enable
+        sharing:
+          description: shmodel_create
+        team_admin_actions:
+          description: sf_external_accept_allow
+      tags:
+      - Executions
+  /readyapi/executions/{executionID}/logs:
+    get:
+      summary: Returns the transaction logs for the specified recipe execution.
+      description: Use this operation to get transaction logs (individual request
+        and recponse of executed test steps) of the recipe execution specified by
+        <i>executionID</i>.  You can find it in the response of your execution request
+        ([see how](http://readyapi.smartbear.com/testserver/tutorials/your_first_recipe/results)),
+        or you can send a GET <code>/readyapi/executions/{executionID}/logs</code>
+        request to the TestServer.
+      operationId: getMessageExchanges
+      x-api-path-slug: readyapiexecutionsexecutionidlogs-get
+      parameters:
+      - in: path
+        name: executionID
+        description: The id of the desired test run
+      responses:
+        apps:
+          description: app_allow
+        devices:
+          description: device_link
+        members:
+          description: member_invite
+        passwords:
+          description: tfa_enable
+        sharing:
+          description: shmodel_create
+        team_admin_actions:
+          description: sf_external_accept_allow
+      tags:
+      - Executions
+  /readyapi/executions/{executionId}/files:
+    post:
+      summary: Posts a file for the specified test run
+      description: Use this operation to send additional files required by the executed
+        test recipes. For example, you may need to send an Excel file for your test
+        recipe that uses an Excel data source. The test recipe will be in the "PENDING"
+        status until it receives the required file. Use the <code>multipart/form-data</code>
+        media type for this request.
+      operationId: addFile
+      x-api-path-slug: readyapiexecutionsexecutionidfiles-post
+      parameters:
+      - in: query
+        name: async
+        description: Specifies when the TestServer replies:`true` - Immediately
+      - in: body
+        name: body
+        description: Required file as `form-data`
+        schema:
+          $ref: '#/definitions/holder'
+      - in: path
+        name: executionId
+        description: The id of the test run that waits for the files
+      responses:
+        apps:
+          description: app_allow
+        devices:
+          description: device_link
+        members:
+          description: member_invite
+        passwords:
+          description: tfa_enable
+        sharing:
+          description: shmodel_create
+        team_admin_actions:
+          description: sf_external_accept_allow
+      tags:
+      - Executions
+  /readyapi/executions/{executionID}/transactions/{transactionId}:
+    get:
+      summary: Gets message exchange for a test step execution transaction
+      description: A particular execution of a test step is referred as transaction.
+        Use this operation to get the request and response for a transaction in HAR
+        format.
+      operationId: getMessageExchange
+      x-api-path-slug: readyapiexecutionsexecutionidtransactionstransactionid-get
+      parameters:
+      - in: path
+        name: executionID
+        description: The id of the test run to get the logs for
+      - in: path
+        name: transactionId
+        description: The id of the transaction (test step execution) to get the message
+          exchange (request and response) for
+      responses:
+        apps:
+          description: app_allow
+        devices:
+          description: device_link
+        members:
+          description: member_invite
+        passwords:
+          description: tfa_enable
+        sharing:
+          description: shmodel_create
+        team_admin_actions:
+          description: sf_external_accept_allow
+      tags:
+      - Executions
 x-streamrank:
   polling_total_time_average: 0
   polling_size_download_average: 0

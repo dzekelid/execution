@@ -8,38 +8,31 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1806-easyc
 x-kinRank: "9"
 x-alexaRank: "181380"
 tags: Execution
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-25"
+modified: "2018-08-25"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/execution/master/_listings/easycron/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Easycron API View the latest 10 execution logs of a cron job.
-  x-api-slug: easycron-api
+- name: Easycron API - View the latest 10 execution logs of a cron job.
+  x-api-slug: logs-get
   description: View the latest 10 execution logs of a cron job.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1806-easycron.jpg
   humanURL: http://easycron.com
-  baseURL: https://www.easycron.com//rest//logs
-  tags: View,Latest,10,Execution,Logs,Of,Cron,Job
+  baseURL: https://www.easycron.com//rest
+  tags: My API Stack, Stack Network, Technology, SaaS, Marketplace, API Provider,
+    API Service Provider, Workers, Profiles, Service API, Relative Data
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/execution/master/_listings/easycron/logs-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/execution/master/_listings/easycron/logs-get-openapi.md
-- name: Easycron API
-  x-api-slug: easycron-api
-  description: EasyCron provides the most stable Cron Job Services. Here you can schedule
-    cron jobs with execution logs, Email notifications, run time predictions and a
-    bunch of other featuers!
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1806-easycron.jpg
-  humanURL: http://easycron.com
-  baseURL: https://www.easycron.com//rest
-  tags: Execution
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/execution/master/_listings/easycron/openapi.md
 x-common:
 - type: x-affiliate
   url: https://www.easycron.com/affiliates/program
+- type: x-api-gallery
+  url: http://dyn.api.gallery.streamdata.io
+- type: x-api-stack
+  url: http://easycron.stack.network
 - type: x-blog
   url: http://blog.easycron.com
 - type: x-blog-rss
