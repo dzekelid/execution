@@ -51,6 +51,23 @@ paths:
       - Execute
       - Custom
       - Handler
+    options:
+      summary: Execute custom handler.
+      description: Request rate limited to 2 requests per second with bursts up to
+        25 requests.
+      operationId: Document_OptionsCustomScript
+      x-api-path-slug: apiv1documentscriptscriptname-options
+      parameters:
+      - in: path
+        name: ScriptName
+        description: The custom script name
+      responses:
+        200:
+          description: OK
+      tags:
+      - Execute
+      - Custom
+      - Handler
 x-streamrank:
   polling_total_time_average: 0
   polling_size_download_average: 0

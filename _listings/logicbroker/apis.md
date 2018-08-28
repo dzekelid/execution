@@ -9,8 +9,8 @@ image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/l
 x-kinRank: "7"
 x-alexaRank: ""
 tags: Execution
-created: "2018-08-25"
-modified: "2018-08-25"
+created: "2018-08-27"
+modified: "2018-08-27"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/execution/master/_listings/logicbroker/apis.md
 specificationVersion: "0.14"
 apis:
@@ -53,6 +53,45 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/execution/master/_listings/logicbroker/apiv1documentscriptscriptname-options-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/execution/master/_listings/logicbroker/apiv1documentscriptscriptname-options-openapi.md
+- name: CommerceAPI - Execute custom handler.
+  x-api-slug: apiv1documentscriptscriptname-options
+  description: Request rate limited to 2 requests per second with bursts up to 25
+    requests.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/logicbroker-logo.png
+  humanURL: https://www.logicbroker.com/
+  baseURL: https://stage.commerceapi.io//
+  tags: Commerce, Retail
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/execution/master/_listings/logicbroker/apiv1documentscriptscriptname-options-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/execution/master/_listings/logicbroker/apiv1documentscriptscriptname-options-openapi.md
+- name: CommerceAPI - Execute custom handler.
+  x-api-slug: apiv1documentscriptscriptname-post
+  description: Request rate limited to 2 requests per second with bursts up to 25
+    requests.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/logicbroker-logo.png
+  humanURL: https://www.logicbroker.com/
+  baseURL: https://stage.commerceapi.io//
+  tags: Commerce, Retail
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/execution/master/_listings/logicbroker/apiv1documentscriptscriptname-post-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/execution/master/_listings/logicbroker/apiv1documentscriptscriptname-post-openapi.md
+- name: CommerceAPI - Execute custom handler.
+  x-api-slug: apiv1documentscriptscriptname-get
+  description: Request rate limited to 2 requests per second with bursts up to 25
+    requests.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/logicbroker-logo.png
+  humanURL: https://www.logicbroker.com/
+  baseURL: https://stage.commerceapi.io//
+  tags: Commerce, Retail
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/execution/master/_listings/logicbroker/apiv1documentscriptscriptname-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/execution/master/_listings/logicbroker/apiv1documentscriptscriptname-get-openapi.md
 x-common:
 - type: x-blog-rss
   url: https://www.logicbroker.com/feed/

@@ -12,11 +12,24 @@ image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/l
 x-kinRank: "8"
 x-alexaRank: "0"
 tags: Execution
-created: "2018-08-25"
-modified: "2018-08-25"
+created: "2018-08-27"
+modified: "2018-08-27"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/execution/master/_listings/ehrscape/apis.md
 specificationVersion: "0.14"
 apis:
+- name: Ehr Scape Clinical Decision Support APIs - Execute guide on given EHR IDs
+  x-api-slug: guideexecuteguideidehrids-get
+  description: Execute guide on given ehr ids.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/EHRScape-Logo.png
+  humanURL: https://www.ehrscape.com
+  baseURL: https://rest.ehrscape.com//ThinkCDS/services/CDSResources
+  tags: Healthcare, Healthcare, Target, Stack Network, API Provider, Profiles, Relative
+    Data, Service API
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/execution/master/_listings/ehrscape/guideexecuteguideidehrids-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/execution/master/_listings/ehrscape/guideexecuteguideidehrids-get-openapi.md
 - name: Ehr Scape Clinical Decision Support APIs - Execute guide on given EHR IDs
   x-api-slug: guideexecuteguideidehrids-get
   description: Execute guide on given ehr ids.

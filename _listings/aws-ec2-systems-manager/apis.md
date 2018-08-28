@@ -16,8 +16,8 @@ image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/l
 x-kinRank: "10"
 x-alexaRank: "0"
 tags: Execution
-created: "2018-08-25"
-modified: "2018-08-25"
+created: "2018-08-27"
+modified: "2018-08-27"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/execution/master/_listings/aws-ec2-systems-manager/apis.md
 specificationVersion: "0.14"
 apis:
@@ -37,6 +37,31 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/execution/master/_listings/aws-ec2-systems-manager/actiondescribemaintenancewindowexecutiontaskinvocations-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/execution/master/_listings/aws-ec2-systems-manager/actiondescribemaintenancewindowexecutiontaskinvocations-get-openapi.md
+- name: AWS EC2 Systems Manager API - Describe Maintenance Window Execution Tasks
+  x-api-slug: actiondescribemaintenancewindowexecutiontasks-get
+  description: For a given Maintenance Window execution, lists the tasks that were
+    executed.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Compute_AmazonEC2.png
+  humanURL: https://aws.amazon.com/ec2/systems-manager/
+  baseURL: :///
+  tags: Amazon Web Services, Management, Cloud, Stack Network, Orchestration, API
+    Service Provider, API Service Provider, API Provider, Deployments, Profiles, Relative
+    Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/execution/master/_listings/aws-ec2-systems-manager/actiondescribemaintenancewindowexecutiontasks-get-openapi.md
+- name: AWS EC2 Systems Manager API - Get Automation Execution
+  x-api-slug: actiongetautomationexecution-get
+  description: Get detailed information about a particular Automation execution.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Compute_AmazonEC2.png
+  humanURL: https://aws.amazon.com/ec2/systems-manager/
+  baseURL: :///
+  tags: Amazon Web Services, Management, Cloud, Stack Network, Orchestration, API
+    Service Provider, API Service Provider, API Provider, Deployments, Profiles, Relative
+    Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/execution/master/_listings/aws-ec2-systems-manager/actiongetautomationexecution-get-openapi.md
 - name: AWS EC2 Systems Manager API - Get Maintenance Window Execution
   x-api-slug: actiongetmaintenancewindowexecution-get
   description: |-
@@ -69,6 +94,57 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/execution/master/_listings/aws-ec2-systems-manager/actiongetmaintenancewindowexecutiontask-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/execution/master/_listings/aws-ec2-systems-manager/actiongetmaintenancewindowexecutiontask-get-openapi.md
+- name: AWS EC2 Systems Manager API - Start Automation Execution
+  x-api-slug: actionstartautomationexecution-get
+  description: Initiates execution of an Automation document.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Compute_AmazonEC2.png
+  humanURL: https://aws.amazon.com/ec2/systems-manager/
+  baseURL: :///
+  tags: Amazon Web Services, Management, Cloud, Stack Network, Orchestration, API
+    Service Provider, API Service Provider, API Provider, Deployments, Profiles, Relative
+    Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/execution/master/_listings/aws-ec2-systems-manager/actionstartautomationexecution-get-openapi.md
+- name: AWS EC2 Systems Manager API - Stop Automation Execution
+  x-api-slug: actionstopautomationexecution-get
+  description: Stop an Automation that is currently executing.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Compute_AmazonEC2.png
+  humanURL: https://aws.amazon.com/ec2/systems-manager/
+  baseURL: :///
+  tags: Amazon Web Services, Management, Cloud, Stack Network, Orchestration, API
+    Service Provider, API Service Provider, API Provider, Deployments, Profiles, Relative
+    Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/execution/master/_listings/aws-ec2-systems-manager/actionstopautomationexecution-get-openapi.md
+- name: AWS EC2 Systems Manager API - Describe Automation Executions
+  x-api-slug: actiondescribeautomationexecutions-get
+  description: Provides details about all active and terminated Automation executions.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Compute_AmazonEC2.png
+  humanURL: https://aws.amazon.com/ec2/systems-manager/
+  baseURL: :///
+  tags: Amazon Web Services, Management, Cloud, Stack Network, Orchestration, API
+    Service Provider, API Service Provider, API Provider, Deployments, Profiles, Relative
+    Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/execution/master/_listings/aws-ec2-systems-manager/actiondescribeautomationexecutions-get-openapi.md
+- name: AWS EC2 Systems Manager API - Describe Maintenance Window Executions
+  x-api-slug: actiondescribemaintenancewindowexecutions-get
+  description: |-
+    Lists the executions of a Maintenance Window (meaning, information about when the
+       Maintenance Window was scheduled to be active and information about tasks registered and run with
+       the Maintenance Window).
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Compute_AmazonEC2.png
+  humanURL: https://aws.amazon.com/ec2/systems-manager/
+  baseURL: :///
+  tags: Amazon Web Services, Management, Cloud, Stack Network, Orchestration, API
+    Service Provider, API Service Provider, API Provider, Deployments, Profiles, Relative
+    Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/execution/master/_listings/aws-ec2-systems-manager/actiondescribemaintenancewindowexecutions-get-openapi.md
 - name: AWS EC2 Systems Manager API - Send Command
   x-api-slug: actionsendcommand-get
   description: Executes commands on one or more remote instances.
@@ -83,6 +159,60 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/execution/master/_listings/aws-ec2-systems-manager/actionsendcommand-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/execution/master/_listings/aws-ec2-systems-manager/actionsendcommand-get-openapi.md
+- name: AWS EC2 Systems Manager API - Describe Automation Executions
+  x-api-slug: actiondescribeautomationexecutions-get
+  description: Provides details about all active and terminated Automation executions.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Compute_AmazonEC2.png
+  humanURL: https://aws.amazon.com/ec2/systems-manager/
+  baseURL: :///
+  tags: Amazon Web Services, Management, Cloud, Stack Network, Orchestration, API
+    Service Provider, API Service Provider, API Provider, Deployments, Profiles, Relative
+    Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/execution/master/_listings/aws-ec2-systems-manager/actiondescribeautomationexecutions-get-openapi.md
+- name: AWS EC2 Systems Manager API - Describe Maintenance Window Executions
+  x-api-slug: actiondescribemaintenancewindowexecutions-get
+  description: |-
+    Lists the executions of a Maintenance Window (meaning, information about when the
+       Maintenance Window was scheduled to be active and information about tasks registered and run with
+       the Maintenance Window).
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Compute_AmazonEC2.png
+  humanURL: https://aws.amazon.com/ec2/systems-manager/
+  baseURL: :///
+  tags: Amazon Web Services, Management, Cloud, Stack Network, Orchestration, API
+    Service Provider, API Service Provider, API Provider, Deployments, Profiles, Relative
+    Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/execution/master/_listings/aws-ec2-systems-manager/actiondescribemaintenancewindowexecutions-get-openapi.md
+- name: AWS EC2 Systems Manager API - Describe Automation Executions
+  x-api-slug: actiondescribeautomationexecutions-get
+  description: Provides details about all active and terminated Automation executions.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Compute_AmazonEC2.png
+  humanURL: https://aws.amazon.com/ec2/systems-manager/
+  baseURL: :///
+  tags: Amazon Web Services, Management, Cloud, Stack Network, Orchestration, API
+    Service Provider, API Service Provider, API Provider, Deployments, Profiles, Relative
+    Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/execution/master/_listings/aws-ec2-systems-manager/actiondescribeautomationexecutions-get-openapi.md
+- name: AWS EC2 Systems Manager API - Describe Maintenance Window Executions
+  x-api-slug: actiondescribemaintenancewindowexecutions-get
+  description: |-
+    Lists the executions of a Maintenance Window (meaning, information about when the
+       Maintenance Window was scheduled to be active and information about tasks registered and run with
+       the Maintenance Window).
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Compute_AmazonEC2.png
+  humanURL: https://aws.amazon.com/ec2/systems-manager/
+  baseURL: :///
+  tags: Amazon Web Services, Management, Cloud, Stack Network, Orchestration, API
+    Service Provider, API Service Provider, API Provider, Deployments, Profiles, Relative
+    Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/execution/master/_listings/aws-ec2-systems-manager/actiondescribemaintenancewindowexecutions-get-openapi.md
 x-common:
 - type: x-api-gallery
   url: http://aws.ec2.container.service.api.gallery.streamdata.io
